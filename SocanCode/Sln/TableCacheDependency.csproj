@@ -1,0 +1,6 @@
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableCacheDependency", "TableCacheDependency\TableCacheDependency.csproj", "{903D3AF1-932E-49F8-B8EC-0AA726A6DCA8}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject

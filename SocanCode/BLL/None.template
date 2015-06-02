@@ -1,0 +1,57 @@
+﻿        #region  成员方法
+        /// <summary>
+        /// 增加一条数据
+        /// </summary>
+        public bool Add($BeforeNamespaceDot$Model$DotAfterNamespace$.$TableName$ model)
+        {
+            return dal.Add(model) > 0;
+        }
+
+        /// <summary>
+        /// 更新一条数据
+        /// </summary>
+        public bool Update($BeforeNamespaceDot$Model$DotAfterNamespace$.$TableName$ model)
+        {
+            return dal.Update(model);
+        }
+
+        /// <summary>
+        /// 删除一条数据
+        /// </summary>
+        public bool Delete($IdType$ $IdName$)
+        {
+            return dal.Delete($IdName$);
+        }
+
+        /// <summary>
+        /// 是否存在该记录
+        /// </summary>
+        public bool Exists($IdType$ $IdName$)
+        {
+            return dal.Exists($IdName$);
+        }
+
+        /// <summary>
+        /// 得到一个对象实体
+        /// </summary>
+        public $BeforeNamespaceDot$Model$DotAfterNamespace$.$TableName$ GetModel($IdType$ $IdName$)
+        {
+            return dal.GetModel($IdName$);
+        }
+
+        /// <summary>
+        /// 获得泛型数据列表
+        /// </summary>
+        public List<$BeforeNamespaceDot$Model$DotAfterNamespace$.$TableName$> GetList()
+        {
+            return dal.GetList();
+        }
+
+        /// <summary>
+        /// 分页获取泛型数据列表,不建议直接使用此方法,请根据业务逻辑重写
+        /// </summary>
+        public List<$BeforeNamespaceDot$Model$DotAfterNamespace$.$TableName$> GetList(int pageSize, int pageIndex, string fldSort, bool Sort, string strCondition, out int Counts)
+        {
+            return dal.GetList(pageSize, pageIndex, fldSort, Sort, strCondition, out Counts);
+        }
+        #endregion

@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Web.Caching;
+using System.Configuration;
+
+namespace $BeforeNamespaceDot$TableCacheDependency
+{
+    public class TableDependency : $BeforeNamespaceDot$ICacheDependency.ISocansoftCacheDependency
+    {
+        protected AggregateCacheDependency dependency = new AggregateCacheDependency();
+
+        protected TableDependency(string dbName, string tables)
+        {
+            string[] tableArray = tables.Split(new char[] { ',' });
+            foreach (string table in tableArray)
+                dependency.Add(new SqlCacheDependency(dbName, table));
+        }
+
+        #region ICacheDependency 成员
+
+        public AggregateCacheDependency GetDependency()
+        {
+            return dependency;
+        }
+
+        #endregion
+    }
+}

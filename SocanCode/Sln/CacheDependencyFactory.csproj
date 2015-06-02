@@ -1,0 +1,6 @@
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheDependencyFactory", "CacheDependencyFactory\CacheDependencyFactory.csproj", "{52BDE70C-84F6-4D4C-B9F6-51B7515DC7C5}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject

@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace $BeforeNamespaceDot$Model
+{
+    public class PageData
+    {
+        public PageData(object data, int count)
+        {
+            _data = data;
+            _count = count;
+        }
+        private object _data;
+        private int _count;
+
+        /// <summary>
+        /// 数据
+        /// </summary>
+        public object Data
+        {
+            get { return _data; }
+            set { _data = value; }
+        }
+
+        /// <summary>
+        /// 数据条数
+        /// </summary>
+        public int Count
+        {
+            get { return _count; }
+            set { _count = value; }
+        }
+    }
+}
